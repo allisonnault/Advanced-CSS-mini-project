@@ -1,0 +1,98 @@
+:root {
+    --dark: rgb(54, 58, 66);
+    --light: white;
+    --main: rgba(232, 102, 236, 1);
+}
+body {
+    background-color: var(--dark);
+    color: var(--light)
+}
+body header, footer {
+    text-align: center;
+}
+header p {
+    margin: 20px;
+}
+header h1 {
+    color: var(--main);
+    margin: 10px;
+    font-size: 30px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: grid;
+    flex-wrap: wrap;
+    
+}
+
+.style-card {
+   margin: 10px;
+   margin-right: auto;
+   margin-left: auto;
+   padding: 8px;
+    border-style: dashed;
+    border-color: var(--light);
+    border-width: 2px;
+    display: inline-block;
+    height: auto;
+    align-items: center;
+    width: 30%;
+    box-sizing: border-box;
+    
+   
+    
+}
+
+.style-card h2 {
+    font-size: 20px;
+    padding: 5px;
+    border-style: solid;
+    border-color: var(--light);
+    border-radius: 8px;
+    position: relative;
+    margin-top: -20px;
+    color: var(--main);
+    background-color: var(--dark);
+    width: 225px;
+    box-sizing: border-box;
+}
+
+.style-card:hover,
+.style-card:hover h2 {
+    box-shadow: inset 0px 0px 8px
+    var(--main), 0 0 15px
+    var(--main);
+}
+.style-card p {
+    color: var(--main);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+pre {
+    white-space: pre-wrap;
+    line-height: 1.5;
+    font-family:monospace;
+    border-radius: 8px;
+    background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.8) 100%);  
+}
+
+footer h2{
+    color: var(--main);
+    
+}
+
+@media screen and (max-width: 992px) {
+    .style-card {
+        width: 45%
+    }
+}
+@media screen and (max-width: 768px) {
+    .style-card {
+        width: 100%
+    }
+}
